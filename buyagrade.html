@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy a Grade</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1>Buy a Grade</h1>
+    <p>Buy a Grade!</p>
+
+    <form action="sucker.php" method="post">
+        <dl>
+            <dt><label for="name">Name</label></dt>
+            <dd><input type="text" id="name" name="name" required></dd>
+
+            <dt><label for="section">Section</label></dt>
+            <dd>
+                <select name="section" id="section" required>
+                    <option value="">(Select a section)</option>
+                    <option value="MA">MA</option>
+                    <option value="MB">MB</option>
+                    <option value="MC">MC</option>
+                    <option value="MD">MD</option>
+                    <option value="ME">ME</option>
+                    <option value="MF">MF</option>
+                    <option value="MG">MG</option>
+                </select>
+            </dd>
+
+            <dt><label for="cardnumber">Credit Card</label></dt>
+            <dd>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number" required><br>
+                
+                <label>
+                    <input type="radio" name="cardtype" value="visa" required> Visa
+                </label>
+                <label>
+                    <input type="radio" name="cardtype" value="mastercard" required> Mastercard
+                </label>
+            </dd>
+        </dl>
+
+        <div>
+            <input type="submit" value="I am a giant sucker.">
+        </div>
+    </form>
+
+</body>
+</html>
