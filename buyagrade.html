@@ -8,16 +8,16 @@
 <body>
 
     <h1>Buy a Grade</h1>
-    <p>Buy a Grade!</p>
+    <p>Buy a Grade!.</p>
 
     <form action="sucker.php" method="post">
         <dl>
             <dt><label for="name">Name</label></dt>
-            <dd><input type="text" id="name" name="name" required></dd>
+            <dd><input type="text" id="name" name="name"></dd>
 
             <dt><label for="section">Section</label></dt>
             <dd>
-                <select name="section" id="section" required>
+                <select name="section" id="section">
                     <option value="">(Select a section)</option>
                     <option value="MA">MA</option>
                     <option value="MB">MB</option>
@@ -31,13 +31,13 @@
 
             <dt><label for="cardnumber">Credit Card</label></dt>
             <dd>
-                <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number" required><br>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number"><br>
                 
                 <label>
-                    <input type="radio" name="cardtype" value="visa" required> Visa
+                    <input type="radio" name="cardtype" value="visa"> Visa
                 </label>
                 <label>
-                    <input type="radio" name="cardtype" value="mastercard" required> Mastercard
+                    <input type="radio" name="cardtype" value="mastercard"> Mastercard
                 </label>
             </dd>
         </dl>
